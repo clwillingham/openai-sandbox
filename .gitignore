@@ -1,0 +1,4 @@
+out/
+.idea/
+out*.png
+__pycache__*
