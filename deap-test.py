@@ -217,10 +217,10 @@ def main():
     mstats.register("min", numpy.min)
     mstats.register("max", numpy.max)
 
-    # pop, log = algorithms.eaSimple(pop, toolbox, 0.5, 0.35, 3450, stats=mstats,
-    #                                halloffame=hof, verbose=True)
-    pop, log = algorithms.eaGenerateUpdate(pop, 500, stats=mstats,
-                                            halloffame=hof, verbose=True)
+    pop, log = algorithms.eaSimple(pop, toolbox, 0.5, 0.35, 3450, stats=mstats,
+                                   halloffame=hof, verbose=True)
+    # pop, log = algorithms.eaGenerateUpdate(pop, 500, stats=mstats,
+    #                                         halloffame=hof, verbose=True)
 
     winner = gp.compile(hof[0], pset)
     graph(hof[0])
